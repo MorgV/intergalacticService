@@ -6,10 +6,7 @@ type Props = {
 
 const AppProviders = ({ children }: Props) => {
     return (
-        <>
-            {/* Место для других провайдеров, если нужно */}
-            {children}
-        </>
+        <>{children}</>
     )
 }
 

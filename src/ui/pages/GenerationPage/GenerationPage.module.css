@@ -1,0 +1,8 @@
+.wrapper {
+  text-align: center;
+  height: 100%;
+}
+
+.wrapper > p {
+  padding-bottom: 15px;
+}

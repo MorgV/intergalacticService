@@ -1,0 +1,30 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  position: relative;
+  min-width: 300px;
+  max-width: 90%;
+}
+
+.closeButton {
+  position: absolute;
+  top: -45px;
+  right: -50px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}

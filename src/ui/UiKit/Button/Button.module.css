@@ -1,0 +1,77 @@
+.button {
+  padding: 10px 15px;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  font-size: 25px;
+}
+
+/* Green */
+.green {
+  background-color: var(--green);
+}
+.green:hover {
+  background-color: #59f39e;
+}
+
+/* Light-green */
+.light-green {
+  background-color: var(--light-green);
+}
+.light-green:hover {
+  background-color: #59f39e;
+}
+/* White */
+.white {
+  background-color: var(--white-color);
+}
+.white:hover {
+  background-color: #000000;
+  color: var(--white-color);
+}
+
+/* Yellow */
+.yellow {
+  background-color: var(--yellow);
+}
+.yellow:hover {
+  background-color: #f7e546;
+}
+/* Purple */
+.purple {
+  background-color: var(--purple-color);
+}
+.purple:hover {
+  background-color: #a264cf;
+}
+/* Orange */
+.orange {
+  background-color: var(--orange);
+  color: var(--white-color);
+}
+.orange:hover {
+  background-color: #fc8642;
+}
+
+/* Light Grey */
+.light-grey {
+  background-color: var(--light-grey);
+  color: var(--black-color);
+}
+.light-grey:hover {
+  background-color: #d9d9d9;
+}
+
+/* Dark Grey */
+.dark-grey {
+  background-color: var(--light-grey);
+  color: var(--dark-grey);
+}
+
+.black-color {
+  background-color: var(--black-color);
+  color: var(--white-color);
+}
+.black-color:hover {
+  background-color: #000000;
+}

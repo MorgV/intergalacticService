@@ -1,20 +1,26 @@
-import { createBrowserRouter } from 'react-router-dom'
-import { GenerationPage } from '../pages/GenerationPage/GenerationPage'
-import { HistoryPage } from '../pages/HistoryPage/HistoryPage'
-import { AnalyticsPage } from '../pages/AnalyticsPage/AnalyticsPage'
-
+import { createBrowserRouter } from "react-router-dom";
+import { Layout } from "../../ui/layout/Layout/Layout";
+import { GenerationPage } from "../../ui/pages/GenerationPage/GenerationPage";
+import { HistoryPage } from "../../ui/pages/HistoryPage/HistoryPage";
+import { AnalyticsPage } from "../../ui/pages/AnalyticsPage/AnalyticsPage";
 
 export const routes = createBrowserRouter([
-    {
-        path: '/',
-        element: <AnalyticsPage />
-    },
-    {
-        path: '/generation',
-        element: <GenerationPage />
-    },
-    {
-        path: '/history',
-        element: <HistoryPage />
-    },
-])
+  {
+    path: "/", // основной маршрут
+    element: <Layout />, // 👈 общий layout
+    children: [
+      {
+        index: true,
+        element: <AnalyticsPage />,
+      },
+      {
+        path: "generation",
+        element: <GenerationPage />,
+      },
+      {
+        path: "history",
+        element: <HistoryPage />,
+      },
+    ],
+  },
+]);

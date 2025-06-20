@@ -1,0 +1,22 @@
+.wrapper {
+  align-items: center;
+  text-align: center;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.white {
+  background-color: var(--white-color);
+  color: black;
+}
+
+.purple {
+  background-color: var(--light-purple-color);
+}
+
+h1 {
+  font-size: 30px;
+}
+p {
+  font-size: 20px;
+}

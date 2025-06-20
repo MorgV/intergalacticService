@@ -1,0 +1,20 @@
+.wrapper {
+  padding: 40px 0 40px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.label {
+  padding: 0 3px;
+  margin-left: 40px;
+  text-transform: uppercase;
+  font-size: 27px;
+  background-color: var(--purple-color);
+  display: inline-block;
+  width: auto;
+  max-height: 37px;
+}
+.info {
+  display: flex;
+  align-items: center;
+}

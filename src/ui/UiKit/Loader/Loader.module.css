@@ -1,0 +1,38 @@
+.wrapper {
+  background-color: var(--purple-color);
+  border-radius: 10px;
+  width: 300px;
+  height: 50px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.svg {
+  transform: rotate(-90deg);
+}
+
+.bg {
+  fill: none;
+  stroke: #e6e6e6;
+  stroke-width: 6;
+}
+
+.progress {
+  fill: none;
+  stroke: var(--green);
+  stroke-width: 6;
+  stroke-dasharray: 163.36; /* 2 * π * 26 */
+  stroke-dashoffset: 163.36;
+  transition: stroke-dashoffset 0.3s ease;
+}
+
+.label {
+  position: absolute;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: sans-serif;
+  color: white;
+}
