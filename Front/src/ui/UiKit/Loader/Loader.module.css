@@ -1,0 +1,40 @@
+.loaderWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-weight: 600;
+  background-color: var(--purple-color);
+  width: 200px;
+  height: 60px;
+  border-radius: 10px;
+}
+
+.backgroundCircle {
+  stroke: var(--white-color); /* светло-зеленый */
+}
+
+.progressCircleFill {
+  stroke: var(--green); /* темно-зеленый */
+  transition: stroke-dashoffset 0.3s ease;
+  transform: rotate(-90deg);
+  transform-origin: 50% 50%;
+}
+
+/* Анимация вращения */
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Класс для бесконечного вращения */
+.indeterminate {
+  animation: rotate 1.2s linear infinite;
+  /* Для indeterminate перекроем transform на вращение */
+  transform-origin: 50% 50%;
+  transform: none; /* убираем rotate(-90deg) из .progressCircleFill */
+}

@@ -1,0 +1,35 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overflow {
+  position: relative;
+  min-width: 800px;
+  max-width: 90%;
+  max-height: 70vh; /* ограничение высоты */
+  overflow-y: auto; /* скролл при переполнении по вертикали */
+  overflow-x: hidden; /* скролл при переполнении по вертикали */
+}
+.modal {
+  position: relative;
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+}
+
+.closeButton {
+  position: absolute;
+  top: -46px;
+  right: -43px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}

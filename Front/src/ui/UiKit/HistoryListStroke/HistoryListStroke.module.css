@@ -1,0 +1,25 @@
+.stroke {
+  background-color: var(--purple-color);
+  padding: 20px;
+  width: 99%;
+  border-radius: 30px;
+  margin: 5px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.stroke:last-child {
+}
+.wrapper-HistoryListStroke {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.group {
+  display: flex;
+  gap: 5px;
+}
+.disabled {
+  pointer-events: none;
+  opacity: 0.5;
+  user-select: none;
+}

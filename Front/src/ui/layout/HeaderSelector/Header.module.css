@@ -1,0 +1,21 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 10px;
+}
+
+.selector {
+  display: flex;
+  gap: 10px;
+  font-size: 20px;
+  align-items: center;
+  padding-bottom: 4px; /* немного места снизу */
+  border-bottom: 2px solid transparent; /* изначально прозрачная линия */
+  cursor: pointer;
+  transition: border-color 0.3s;
+}
+
+.selector.active {
+  border-bottom-color: var(--black-color); /* синий цвет подчеркивания */
+}

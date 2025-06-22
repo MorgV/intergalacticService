@@ -1,0 +1,21 @@
+.wrapper {
+  padding: 20px 0;
+  width: 100%;
+  gap: 20px; /* Отступ между блоками */
+  display: grid;
+  min-width: 700px;
+}
+
+.twoColumns {
+  grid-template-columns: repeat(2, 1fr); /* Два столбца */
+}
+
+.oneColumn {
+  grid-template-columns: 1fr; /* Один столбец */
+}
+
+.title {
+  grid-column: 1 / -1; /* Заголовок на всю ширину */
+  color: var(--purple-color);
+  font-size: 30px;
+}

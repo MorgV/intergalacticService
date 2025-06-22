@@ -1,0 +1,31 @@
+.InputWrapper {
+  margin: 20px 0;
+  background-color: var(--light-purple-color);
+  border-radius: 20px;
+  min-height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* по горизонтали */
+  align-items: center; /* по вертикали */
+}
+.InputWrapper .err {
+  background-color: transparent;
+  border-color: var(--orange);
+  color: var(--orange);
+}
+.errButton {
+  background-color: var(--orange);
+  color: var(--white-color);
+}
+.InputWrapper.active {
+  background-color: transparent;
+  border: 1px var(--black-color) solid;
+}
+
+.InputWrapper.dragActive {
+  background-color: var(--light-green);
+}
+.buttons {
+  display: flex;
+  gap: 10px;
+}
